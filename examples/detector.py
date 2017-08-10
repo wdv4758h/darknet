@@ -11,15 +11,14 @@ import darknet as dn
 net = dn.load_net("cfg/tiny-yolo.cfg", "tiny-yolo.weights", 0)
 meta = dn.load_meta("cfg/coco.data")
 r = dn.detect(net, meta, "data/dog.jpg")
-print r
+print(r)
 
 # And then down here you could detect a lot more images like:
 r = dn.detect(net, meta, "data/eagle.jpg")
-print r
+print(r)
 r = dn.detect(net, meta, "data/giraffe.jpg")
-print r
+print(r)
 r = dn.detect(net, meta, "data/horses.jpg")
-print r
+print(r)
 r = dn.detect(net, meta, "data/person.jpg")
-print r
-
+print(r)
